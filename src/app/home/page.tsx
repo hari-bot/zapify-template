@@ -16,6 +16,9 @@ import Counter1 from "@/components/elements/counter/counter1";
 import SEOCounter from "@/components/elements/counter/seo-counter";
 import HomeCounter from "@/components/elements/counter/home-counter";
 import HomeAbout from "@/components/elements/about/home-about";
+import HomeAboutMultiple from "@/components/elements/about/home-about-multiple";
+import VideoEditorProcess from "@/components/elements/process/video-editor-process";
+import HomeProcess from "@/components/elements/process/home-process";
 
 export default function Page() {
   const hero = getMainPage("/heros/home-hero.mdx");
@@ -23,26 +26,23 @@ export default function Page() {
   const services = getAllPages("/services/home");
   const counter = getMainPage("/counters/home-counter.mdx");
   const banner = getMainPage("/banners/booking-banner.mdx");
-  const testimonial = getMainPage("/testimonials/booking-testimonial.mdx");
-  const about = getMainPage("/abouts/booking-about.mdx");
+  const testimonial = getMainPage("/testimonials/home-testimonial.mdx");
+  const about = getMainPage("/abouts/home-about.mdx");
   const integration = getMainPage("/integrations/booking-integration.mdx");
   const pricing = getMainPage("/pricings/home-pricing.mdx");
   const cta = getMainPage("/ctas/cta1.mdx");
+  const process = getMainPage("/processes/home-process.mdx");
 
   return (
     <main>
       <SeoData />
       <BookingHero hero={hero} />
       <BookingService service={service} services={services} />
-      {/* <BookingCounter counter={counter} /> */}
-      <HomeAbout about={about} />
+      <HomeAboutMultiple aboutSections={about.data.aboutSections} />
       <HomeCounter counter={counter} />
-      <BookingBanner banner={banner} />
-      <BookingHomeAbout about={about} />
       <BookingTestimonial testimonial={testimonial} />
-      <BookingIntegration integration={integration} />
       <BookingPricing pricing={pricing} />
-      <CTA1 cta={cta} />
+      <HomeProcess process={process} />
     </main>
   );
 }
