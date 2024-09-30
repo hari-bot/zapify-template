@@ -9,11 +9,11 @@
     "title": "Zapify",
     "description": "Zapify enables businesses to automate customer engagement and chat on Instagram, WhatsApp, and Messenger, boosting sales and improving communication.",
     "base_url": "",
-    "logo": "/assets/imgs/logo/logo.png",
-    "logo_light": "/assets/imgs/logo/logo-light.png",
+    "logo": "/assets/imgs/logo/zapify.png",
+    "logo_light": "/assets/imgs/logo/zapify-light.png",
     "logo_icon": "/assets/imgs/logo/logo-icon.png",
     "logo_width": 115,
-    "logo_height": 32,
+    "logo_height": 37,
     "logo_text": "Zapify"
   },
 

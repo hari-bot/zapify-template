@@ -20,6 +20,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 // components
 import TitleSection2 from "@/components/shared/title-section/title-section2";
+import TitleSection3 from "@/components/shared/title-section/title-section3";
 
 type Props = {
   process: {
@@ -51,7 +52,12 @@ const HomeProcess = ({ process }: Props) => {
   return (
     <section className="sec_space4">
       <div className="container" ref={containerRef}>
-        <TitleSection2 title={title} details={details} html />
+        <TitleSection3
+          title={title}
+          details={details}
+          html
+          titleClassName="max-w-[650px] text-xl"
+        />
         {items && items.length && (
           <div className="mt-[60px] flex justify-start lg:justify-between flex-wrap gap-[30px] ">
             {items.slice(0, 3).map((item, i) => (
