@@ -107,9 +107,8 @@ const PrivacyPolicy1 = ({ privacy }: Props) => {
                             <p
                               key={`text_content-${i}${j}${k}`}
                               className="mb-[23px]"
-                            >
-                              {el}
-                            </p>
+                              dangerouslySetInnerHTML={{ __html: el }}
+                            />
                           ))}
                       </div>
                     ))}

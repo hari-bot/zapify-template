@@ -30,22 +30,7 @@ const MainContact = (props: Props) => {
   return (
     <section className="pt-[5px] xl:pt-[75px] 2xl:pt-[135px] sec_space_bottom1">
       <div className="container" ref={containerRef}>
-        <TitleSection1
-          title="Let’s get in touch"
-          details="Everything you need to dominate app service fortified the industry’s #1 rated our customer support."
-        />
-        <div className="has_fade_anim" data-delay="0.60">
-          <iframe
-            src={address.iframe_src}
-            width="100%"
-            height="580"
-            allowFullScreen
-            loading="lazy"
-            className="rounded-[10px] lg:rounded-theme border-0"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div className="flex flex-col md:flex-row justify-between relative gap-[40px] md:gap-[80px] pt-[60px] md:pt-[90px] xl:pt-[120px] 2xl:pt-[180px]">
+        <div className="flex flex-col md:flex-row justify-between relative gap-[40px] md:gap-[80px]">
           <div className="w-max absolute bottom-0 end-[calc(100%+100px)]">
             <Image
               width={153}
