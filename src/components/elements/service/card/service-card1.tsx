@@ -21,7 +21,7 @@ type Props = {
 };
 
 const ServiceCard1 = ({ service }: Props) => {
-  const { title, short_description, image } = service.data;
+  const { title, short_description, image, link } = service.data;
   return (
     <div className="border border-border hover:border-theme rounded-theme bg-white text-center transition-all duration-300 pt-[40px] 2xl:pt-[50px] pb-[37px] 2xl:pb-[47px] px-[30px] 2xl:px-[60px]">
       <div className="thumb">
@@ -37,7 +37,7 @@ const ServiceCard1 = ({ service }: Props) => {
         <h3 className="text-[20px] md:text-[24px] leading-[1.25]">{title}</h3>
         <p className="mt-[23px]">{short_description}</p>
         <Link
-          href="#"
+          href={link ? link : "#"}
           className={cn(
             buttonVariants({ variant: "normal" }),
             "group mt-[41px] 2xl:mt-[71px]"

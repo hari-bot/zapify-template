@@ -18,6 +18,7 @@ export type ServiceDetailsType = {
   title: string;
   short_description: string;
   image: string;
+  link?: string;
 };
 
 export type SingleBlogType = {

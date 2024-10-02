@@ -48,7 +48,7 @@ const TitleSection3 = ({
       />
       <p
         className={cn(
-          "mt-[23px] lg:mt-[33px] max-w-[550px] mx-auto has_fade_anim text-2xl",
+          "mt-[23px] lg:mt-[33px] max-w-[850px] mx-auto has_fade_anim text-2xl",
           detailsClassName
         )}
       >

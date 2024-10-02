@@ -6,10 +6,10 @@ export default function Loading() {
           <div className="h-[9em] w-[9em] rounded-full border-[10px] border-[#00000033] border-t-primary my-auto animate-spin"></div>
           <div className="text-[5em] font-[Montserrat, sans-serif] font-bold text-center select-none">
             <span
-              data-text="S"
+              data-text="Z"
               className="inline-block relative text-[#00000033] before:text-primary before:content-[attr(data-text)] before:animate-[characters_4s_infinite] before:left-0 before:top-0 before:opacity-0 before:absolute -before:rotate-y-90"
             >
-              S
+              Z
             </span>
             <span
               data-text="A"
@@ -18,22 +18,22 @@ export default function Loading() {
               A
             </span>
             <span
-              data-text="S"
+              data-text="P"
               className="inline-block relative text-[#00000033] before:text-primary before:content-[attr(data-text)] before:animate-[characters_4s_infinite_0.4s] before:left-0 before:top-0 before:opacity-0 before:absolute -before:rotate-y-90"
             >
-              S
+              P
             </span>
             <span
-              data-text="S"
+              data-text="I"
               className="inline-block relative text-[#00000033] before:text-primary before:content-[attr(data-text)] before:animate-[characters_4s_infinite_0.6s] before:left-0 before:top-0 before:opacity-0 before:absolute -before:rotate-y-90"
             >
-              S
+              I
             </span>
             <span
-              data-text="L"
+              data-text="F"
               className="inline-block relative text-[#00000033] before:text-primary before:content-[attr(data-text)] before:animate-[characters_4s_infinite_0.8s] before:left-0 before:top-0 before:opacity-0 before:absolute -before:rotate-y-90"
             >
-              L
+              F
             </span>
             <span
               data-text="Y"

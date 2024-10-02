@@ -15,7 +15,7 @@ const Layout = ({
   return (
     <div className="colasta-bold root-layout" theme-setting="style-2">
       <ScrollSmootherComponent />
-      <ToolsComponent />
+      {/* <ToolsComponent /> */}
       <ScrollTop />
       <Header2 headerNav={navigation.header} />
       <div id="smooth-wrapper">

@@ -1,38 +1,26 @@
 import navigation from "@/config/navigation.json";
 
-import { getMainPage } from "@/lib/helper/contentConverter";
-
 // Components
-import Header5 from "@/components/elements/header/header5";
+import Header12 from "@/components/elements/header/header12";
 import Footer1 from "@/components/elements/footer/footer1";
 import ScrollSmootherComponent from "@/components/tools/scroll-smoother";
 import ToolsComponent from "@/components/tools";
 import ScrollTop from "@/components/tools/scroll-top";
-import Notification1 from "@/components/elements/notification/notification1";
 
 const Layout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const notification = getMainPage("/notifications/whatsapp-notification.mdx");
-
   return (
-    <div className="colasta-bold root-layout" theme-setting="style-9">
+    <div className="colasta-bold root-layout" theme-setting="style-12">
       <ScrollSmootherComponent />
       {/* <ToolsComponent /> */}
       <ScrollTop />
-      <Header5
-        headerNav={navigation.header}
-        signUpBtnClassName="bg-btn-bg-hover hover:bg-btn-bg-main"
-      >
-        <Notification1 notification={notification} />
-      </Header5>
+      <Header12 headerNav={navigation.header} />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <div className="max-w-[1920px] overflow-hidden mx-auto">
-            {children}
-          </div>
+          <div className="bg-[#FCFBF7]">{children}</div>
           <Footer1 footerNav={navigation.footer1} />
         </div>
       </div>

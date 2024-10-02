@@ -19,21 +19,31 @@ import { buttonVariants } from "@/components/ui/button";
 
 // components
 import Title1 from "@/components/shared/title/title1";
+import TitleSection2 from "@/components/shared/title-section/title-section2";
 
 type AboutSection = {
   title: string;
   details: string;
-  video: string; // Assuming video is a URL or source for the video
+  video: string;
   action_btn: ActionBtnType;
 };
 
 type Props = {
   aboutSections: AboutSection[];
+  heading?: string;
 };
 
-const HomeAboutMultiple = ({ aboutSections }: Props) => {
+const HomeAboutMultiple = ({ aboutSections, heading }: Props) => {
   return (
     <>
+      {heading && (
+        <TitleSection2
+          title={heading!}
+          details={""}
+          titleClassName="max-w-[795px] mt-20"
+          detailsClassName="max-w-[695px]"
+        />
+      )}
       {aboutSections.map((about, index) => (
         <HomeAbout key={index} about={about} index={index} />
       ))}
@@ -74,7 +84,7 @@ const HomeAbout = ({
               <video
                 width={616}
                 height={616}
-                className="rounded-[40px]"
+                className="rounded-[40px] has_fade_anim"
                 loop
                 autoPlay
                 playsInline

@@ -2,7 +2,7 @@
   "metadata": {
     "meta_author": "Hariharan",
     "meta_image": "",
-    "meta_description": "Sassly Landing Page"
+    "meta_description": "Zapify DM Automation "
   },
 
   "site_info": {
@@ -38,22 +38,32 @@
   "social": [
     {
       "name": "Fb",
-      "link": "https://www.facebook.com/MojoWeb.Tech",
+      "link": "https://www.facebook.com/ZapifyPro",
       "value": "750,000"
     },
     {
-      "name": "Tw",
-      "link": "https://twitter.com/",
+      "name": "X",
+      "link": "https://x.com/ZapifyPro",
       "value": "750,000"
     },
     {
       "name": "In",
-      "link": "https://www.instagram.com/mojoweb.tech/",
+      "link": "https://www.instagram.com/ZapifyPro",
       "value": "750,000"
     },
     {
       "name": "Li",
-      "link": "https://www.linkedin.com/company/mojowebtech/",
+      "link": "https://www.linkedin.com/in/zapifypro",
+      "value": "750,000"
+    },
+    {
+      "name": "Yt",
+      "link": "https://www.youtube.com/@ZapifyPro",
+      "value": "750,000"
+    },
+    {
+      "name": "Rd",
+      "link": "https://www.reddit.com/user/ZapifyPro/",
       "value": "750,000"
     }
   ]

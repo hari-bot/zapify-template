@@ -2,56 +2,24 @@
   "header": [
     {
       "name": "Home",
-      "path": "#",
-      "hasChildren": true,
+      "path": "/home",
+      "hasChildren": false,
       "children": [
         {
-          "name": "Booking Software",
-          "path": "/booking"
+          "name": "Home Page",
+          "path": "/home"
         },
         {
-          "name": "Virtual Meeting",
-          "path": "/meeting"
+          "name": "Facebook Messenger",
+          "path": "/messenger"
         },
         {
-          "name": "CRM Software",
-          "path": "/crm"
+          "name": "Instagram",
+          "path": "/instagram"
         },
         {
-          "name": "Ai Chatbot",
-          "path": "/chatbot"
-        },
-        {
-          "name": "Customer Service",
-          "path": "/customer-service"
-        },
-        {
-          "name": "Ai Image Generator",
-          "path": "/image-generator"
-        },
-        {
-          "name": "Ai Content Writer",
-          "path": "/content-writer"
-        },
-        {
-          "name": "Ai Video Editor",
-          "path": "/video-editor"
-        },
-        {
-          "name": "Ai SEO",
-          "path": "/seo"
-        },
-        {
-          "name": "Ai Startup",
-          "path": "/startup"
-        },
-        {
-          "name": "Mobile App / SASS",
-          "path": "/mobile-app"
-        },
-        {
-          "name": "Marketing Automation",
-          "path": "/marketing"
+          "name": "Whatsapp",
+          "path": "/whatsapp"
         }
       ]
     },
@@ -60,8 +28,22 @@
       "path": "/about"
     },
     {
-      "name": "Integration",
-      "path": "/integration"
+      "name": "Services",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Facebook Messenger",
+          "path": "/messenger"
+        },
+        {
+          "name": "Instagram",
+          "path": "/instagram"
+        },
+        {
+          "name": "Whatsapp",
+          "path": "/whatsapp"
+        }
+      ]
     },
     {
       "name": "Pages",

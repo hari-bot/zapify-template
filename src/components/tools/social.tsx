@@ -2,11 +2,12 @@ import Link from "next/link";
 
 // icons
 import {
-  FaDribbble,
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
+  FaYoutube,
+  FaXTwitter,
+  FaReddit,
 } from "react-icons/fa6";
 
 // lib
@@ -31,7 +32,7 @@ export const socialShare1 = (item: SocialType, className: string) => {
           <FaFacebookF />
         </Link>
       );
-    case "Tw":
+    case "X":
       return (
         <Link
           href={item.link}
@@ -39,7 +40,7 @@ export const socialShare1 = (item: SocialType, className: string) => {
           key={item.link}
           className={cn("relative z-10", className)}
         >
-          <FaTwitter />
+          <FaXTwitter />
         </Link>
       );
     case "In":
@@ -53,7 +54,7 @@ export const socialShare1 = (item: SocialType, className: string) => {
           <FaInstagram />
         </Link>
       );
-    case "Db":
+    case "Yt":
       return (
         <Link
           href={item.link}
@@ -61,7 +62,7 @@ export const socialShare1 = (item: SocialType, className: string) => {
           key={item.link}
           className={cn("relative z-10", className)}
         >
-          <FaDribbble />
+          <FaYoutube />
         </Link>
       );
     case "Li":
@@ -73,6 +74,17 @@ export const socialShare1 = (item: SocialType, className: string) => {
           className={cn("relative z-10", className)}
         >
           <FaLinkedin />
+        </Link>
+      );
+    case "Rd":
+      return (
+        <Link
+          href={item.link}
+          target="_blank"
+          key={item.link}
+          className={cn("relative z-10", className)}
+        >
+          <FaReddit />
         </Link>
       );
   }
