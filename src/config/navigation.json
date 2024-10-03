@@ -3,25 +3,7 @@
     {
       "name": "Home",
       "path": "/home",
-      "hasChildren": false,
-      "children": [
-        {
-          "name": "Home Page",
-          "path": "/home"
-        },
-        {
-          "name": "Facebook Messenger",
-          "path": "/messenger"
-        },
-        {
-          "name": "Instagram",
-          "path": "/instagram"
-        },
-        {
-          "name": "Whatsapp",
-          "path": "/whatsapp"
-        }
-      ]
+      "hasChildren": false
     },
     {
       "name": "About",
@@ -29,6 +11,7 @@
     },
     {
       "name": "Services",
+      "path": "#",
       "hasChildren": true,
       "children": [
         {
@@ -53,6 +36,10 @@
         {
           "name": "Team",
           "path": "/team"
+        },
+        {
+          "name": "Project",
+          "path": "/project"
         },
         {
           "name": "Pricing",
