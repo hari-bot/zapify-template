@@ -38,10 +38,6 @@
           "path": "/team"
         },
         {
-          "name": "Project",
-          "path": "/project"
-        },
-        {
           "name": "Pricing",
           "path": "/pricing"
         },
