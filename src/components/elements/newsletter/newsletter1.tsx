@@ -31,7 +31,7 @@ const NewsLetter1 = () => {
       <div className="container" ref={containerRef}>
         <div className="text-center">
           <Title1
-            text="Join our 120k+ big community connect our newsletter"
+            text="Stay connected and get the latest updates by subscribing to our newsletter."
             className="max-w-[880px] mx-auto has_fade_anim"
           />
           <div className="mt-[31px] xl:mt-[41px] 2xl:mt-[61px] has_fade_anim">

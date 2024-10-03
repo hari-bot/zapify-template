@@ -67,8 +67,27 @@ const Footer1 = ({ footerNav }: Props) => {
               ))}
             </ul>
           )}
+
+          <div className="flex gap-[16px] mt-[10px] md:mt-0">
+            <a
+              href="/privacy-policy"
+              className="relative text-white-2 hover:text-white transition-colors duration-200"
+            >
+              Privacy Policy
+              <span className="absolute left-0 bottom-0 h-[2px] w-full bg-white-2 transform scale-x-0 transition-transform duration-200 group-hover:scale-x-100" />
+            </a>
+            <span className="text-white-2">|</span>
+            <a
+              href="/terms-of-service"
+              className="relative text-white-2 hover:text-white transition-colors duration-200"
+            >
+              Terms of Service
+              <span className="absolute left-0 bottom-0 h-[2px] w-full bg-white-2 transform scale-x-0 transition-transform duration-200 group-hover:scale-x-100" />
+            </a>
+          </div>
+
           {copyright && copyright.enable && (
-            <p className="text-[16px] font-bold text-white-2">
+            <p className="text-[16px] font-bold text-white-2 mt-[10px] md:mt-0">
               {copyright.label}{" "}
               <Link href={copyright.link} className="text-white">
                 {copyright.company}

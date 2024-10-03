@@ -7,7 +7,7 @@ import NewsLetter1 from "@/components/elements/newsletter/newsletter1";
 import BookingPricing from "@/components/elements/pricing/booking-pricing";
 
 export default function Page() {
-  const pricing = getMainPage("/pricings/booking-pricing.mdx");
+  const pricing = getMainPage("/pricings/home-pricing.mdx");
   const faq = getMainPage("/faqs/faq1.mdx");
 
   const { meta_title, meta_description } = pricing.data.meta || {};
