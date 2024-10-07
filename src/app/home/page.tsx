@@ -19,6 +19,7 @@ import HomeAbout from "@/components/elements/about/home-about";
 import HomeAboutMultiple from "@/components/elements/about/home-about-multiple";
 import VideoEditorProcess from "@/components/elements/process/video-editor-process";
 import HomeProcess from "@/components/elements/process/home-process";
+import ImageGeneratorBlog from "@/components/elements/blog/image-generator-blog";
 
 export default function Page() {
   const hero = getMainPage("/heros/home-hero.mdx");
@@ -32,6 +33,8 @@ export default function Page() {
   const pricing = getMainPage("/pricings/home-pricing.mdx");
   const cta = getMainPage("/ctas/cta1.mdx");
   const process = getMainPage("/processes/home-process.mdx");
+  const blog = getMainPage("/blogs/main/_index.mdx");
+  const blogs = getAllPages("/blogs/main");
 
   return (
     <main>
@@ -43,6 +46,7 @@ export default function Page() {
       <BookingTestimonial testimonial={testimonial} />
       <BookingPricing pricing={pricing} />
       <HomeProcess process={process} />
+      <ImageGeneratorBlog blog={blog} blogs={blogs.slice(0, 3)} />
     </main>
   );
 }

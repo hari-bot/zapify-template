@@ -6,6 +6,7 @@ import Footer1 from "@/components/elements/footer/footer1";
 import ScrollSmootherComponent from "@/components/tools/scroll-smoother";
 import ToolsComponent from "@/components/tools";
 import ScrollTop from "@/components/tools/scroll-top";
+import Footer5 from "@/components/elements/footer/footer5";
 
 const Layout = ({
   children,
@@ -22,7 +23,7 @@ const Layout = ({
         <div id="smooth-content">
           <div className="absolute w-full h-[1100px] top-0 start-0 -z-[1] bg-gradient-180 from-[#FBF7F4] to-[#fbf7f400]" />
           <div className="pt-[100px]">{children}</div>
-          <Footer1 footerNav={navigation.footer1} />
+          <Footer5 footerNav={navigation.footer1} />
         </div>
       </div>
     </div>
