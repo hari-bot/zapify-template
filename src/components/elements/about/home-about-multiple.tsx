@@ -35,7 +35,7 @@ type Props = {
 
 const HomeAboutMultiple = ({ aboutSections, heading }: Props) => {
   return (
-    <>
+    <section className="">
       {heading && (
         <TitleSection2
           title={heading!}
@@ -47,7 +47,7 @@ const HomeAboutMultiple = ({ aboutSections, heading }: Props) => {
       {aboutSections.map((about, index) => (
         <HomeAbout key={index} about={about} index={index} />
       ))}
-    </>
+    </section>
   );
 };
 
@@ -76,7 +76,7 @@ const HomeAbout = ({
   const isEven = index % 2 === 0;
 
   return (
-    <section className="pt-[60px] md:pt-[100px] lg:pt-[150px] xl:pt-[100px]">
+    <div className="pt-[60px] md:pt-[100px] lg:pt-[150px] xl:pt-[100px]">
       <div className="container" ref={containerRef}>
         <div className="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-6 items-center">
           <div className={isEven ? "lg:order-1" : "lg:order-2"}>
@@ -114,6 +114,6 @@ const HomeAbout = ({
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -6,11 +6,30 @@
       "hasChildren": false
     },
     {
-      "name": "About",
-      "path": "/about"
+      "name": "Services",
+      "path": "#",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Services by Business Type",
+          "path": "#"
+        },
+        {
+          "name": "Tailored for Creators",
+          "path": "/creators"
+        },
+        {
+          "name": "Designed for eCommerce",
+          "path": "#"
+        },
+        {
+          "name": "Catering to Agencies",
+          "path": "#"
+        }
+      ]
     },
     {
-      "name": "Services",
+      "name": "Features",
       "path": "#",
       "hasChildren": true,
       "children": [

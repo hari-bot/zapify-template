@@ -50,12 +50,7 @@ const InstagramCta = ({
   );
 
   return (
-    <section
-      className={cn(
-        "sec_space_bottom1 pt-[50px] md:pt-[80px] xl:pt-[110px] 2xl:pt-[180px]",
-        className
-      )}
-    >
+    <section className={cn("sec_space1", className)}>
       <div className="container" ref={containerRef}>
         <TitleSection3
           title={title}

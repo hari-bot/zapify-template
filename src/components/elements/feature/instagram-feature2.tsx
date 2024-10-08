@@ -56,21 +56,25 @@ const InstagramFeature2 = ({ feature }: Props) => {
   // Function to update the image based on the clicked accordion item
   const handleImageChange = (image: string) => {
     if (image !== selectedImage) {
-      // Trigger image change animation (tilt to left and move down)
+      // Trigger image change animation (pop from bottom and fade out)
       gsap.to(imageRef.current, {
-        x: -50, // Slight horizontal movement to the left
-        y: 50, // Move down
-        rotation: -15, // Tilt to the left
+        y: 20, // Move slightly down for pop effect
         opacity: 0,
         duration: 0.2,
+        ease: "power1.out",
         onComplete: () => {
-          // Update the image after tilting and moving down
+          // Update the image after fading out
           setSelectedImage(image);
-          // Reset and animate the new image in
+          // Reset and animate the new image in (pop from bottom with bounce)
           gsap.fromTo(
             imageRef.current,
-            { x: 50, y: -50, rotation: 15, opacity: 0 }, // Start from opposite direction
-            { x: 0, y: 0, rotation: 0, opacity: 1, duration: 0.5 }
+            { y: 50, opacity: 0 }, // Start from below and fully transparent
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              ease: "bounce.out", // Add bounce effect
+            }
           );
         },
       });

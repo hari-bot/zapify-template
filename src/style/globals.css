@@ -183,6 +183,19 @@
     --btn-text-main: #fff;
     --btn-text-hover: #072032;
   }
+
+  .root-layout[theme-setting="style-13"] {
+    --theme: #FF69B4; 
+  
+    --btn-bg-main: #FF69B4; 
+    --btn-bg-hover: #C71585; 
+    --btn-text-main: #FFFFFF;
+    --btn-text-hover: #FFFFFF; 
+  
+    --btn2-bg-hover: #FF69B4;
+    --btn2-text-hover: #2C3E50; 
+  }
+  
 }
 
 @layer base {

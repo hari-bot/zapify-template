@@ -22,7 +22,7 @@ type Props = {
 const InstagramFeature1 = ({ feature }: Props) => {
   const { title, items } = feature.data;
   return (
-    <section>
+    <section className="">
       <div className="container">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16 text-gray-800">
           {title}
