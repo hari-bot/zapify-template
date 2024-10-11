@@ -35,7 +35,7 @@ type Props = {
 
 const HomeAboutMultiple = ({ aboutSections, heading }: Props) => {
   return (
-    <section className="">
+    <section className="mb-10">
       {heading && (
         <TitleSection2
           title={heading!}

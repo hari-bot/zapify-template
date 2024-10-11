@@ -6,30 +6,26 @@
       "hasChildren": false
     },
     {
-      "name": "Services",
+      "name": "Solutions",
       "path": "#",
       "hasChildren": true,
       "children": [
         {
-          "name": "Services by Business Type",
-          "path": "#"
-        },
-        {
-          "name": "Tailored for Creators",
+          "name": "for Creators",
           "path": "/creators"
         },
         {
-          "name": "Designed for eCommerce",
+          "name": "for eCommerce",
           "path": "#"
         },
         {
-          "name": "Catering to Agencies",
+          "name": "for Agencies",
           "path": "#"
         }
       ]
     },
     {
-      "name": "Features",
+      "name": "Products",
       "path": "#",
       "hasChildren": true,
       "children": [
@@ -75,7 +71,7 @@
       ]
     },
     {
-      "name": "Guides",
+      "name": "Resources",
       "path": "#",
       "hasChildren": true,
       "children": [

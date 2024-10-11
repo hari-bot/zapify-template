@@ -103,9 +103,9 @@ const MarketingTestimonial = ({ testimonial }: Props) => {
                         </div>
                         <div>
                           <h2 className="text-[18px] font-normal leading-[1.6]">
-                            Saia Oliv
+                            {item.name}
                           </h2>
-                          <p className="text-[12px]">Chief Operating Officer</p>
+                          <p className="text-[12px]">{item.occupation}</p>
                         </div>
                       </div>
                       <div>
