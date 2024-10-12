@@ -1,11 +1,6 @@
 {
   "header": [
     {
-      "name": "Home",
-      "path": "/home",
-      "hasChildren": false
-    },
-    {
       "name": "Solutions",
       "path": "#",
       "hasChildren": true,
@@ -20,7 +15,7 @@
         },
         {
           "name": "for Agencies",
-          "path": "#"
+          "path": "/agencies"
         }
       ]
     },

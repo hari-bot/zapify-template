@@ -40,7 +40,7 @@ const MessengerFeature1 = ({ feature }: Props) => {
   );
 
   return (
-    <section className="bg-sec_bg max-w-[1290px] mx-auto rounded-theme sec_space4">
+    <section className="max-w-[1290px] mx-auto rounded-theme sec_space4">
       <div className="container" ref={containerRef}>
         <TitleSection2
           title={title}
