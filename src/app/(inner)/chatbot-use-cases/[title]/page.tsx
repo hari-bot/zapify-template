@@ -48,7 +48,11 @@ export default function Page({ params }: Props) {
         meta_title={meta_title || "Chatbot use case page"}
         description={meta_description || "Chatbot use case page"}
       />
-      <UseCaseDetails blog={blog} />
+      <UseCaseDetails blog={blog}>
+        <div className="blog_details">
+          <MDXContent content={blog.content} />
+        </div>
+      </UseCaseDetails>
       <VideoBanner banner={banner1} />
       <ImageBanner hero={banner2} />
       <RelatedUseCases blog={useCase} blogs={blogs.slice(0, 3)} />
