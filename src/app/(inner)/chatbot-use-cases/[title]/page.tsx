@@ -17,7 +17,7 @@ type Props = {
 };
 
 export const generateStaticParams = () => {
-  const blogs = getAllPages("/blogs/main");
+  const blogs = getAllPages("/chatbot-use-cases/main");
   const paths = blogs.map((program) => ({
     title: program.slug,
   }));
@@ -53,9 +53,9 @@ export default function Page({ params }: Props) {
           <MDXContent content={blog.content} />
         </div>
       </UseCaseDetails>
-      {/* <VideoBanner banner={banner1} />
+      <VideoBanner banner={banner1} />
       <ImageBanner hero={banner2} />
-      <RelatedUseCases blog={useCase} blogs={blogs.slice(0, 3)} /> */}
+      <RelatedUseCases blog={useCase} blogs={blogs.slice(0, 3)} />
     </main>
   );
 }
