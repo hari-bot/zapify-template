@@ -53,9 +53,9 @@ export default function Page({ params }: Props) {
           <MDXContent content={blog.content} />
         </div>
       </UseCaseDetails>
-      <VideoBanner banner={banner1} />
+      {/* <VideoBanner banner={banner1} />
       <ImageBanner hero={banner2} />
-      <RelatedUseCases blog={useCase} blogs={blogs.slice(0, 3)} />
+      <RelatedUseCases blog={useCase} blogs={blogs.slice(0, 3)} /> */}
     </main>
   );
 }
