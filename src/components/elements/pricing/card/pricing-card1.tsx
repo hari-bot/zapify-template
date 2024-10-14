@@ -28,9 +28,9 @@ const PricingCard1 = ({ price }: Props) => {
       <p
         className={cn(
           "text-[18px] font-medium leading-none inline-block px-[27px] py-[11px] rounded-[24.5px]",
-          key === "basic" && "text-[#FF9B3F] bg-[#FFF5E7]",
-          key === "premium" && "text-[#47B580] bg-[#E6F8F0]",
-          key === "enterprise" && "text-[#4B77CD] bg-[#EDF4FF]"
+          key === "free" && "text-[#FF9B3F] bg-[#FFF5E7]",
+          key === "standard" && "text-[#47B580] bg-[#E6F8F0]",
+          key === "premium" && "text-[#4B77CD] bg-[#EDF4FF]"
         )}
       >
         {name}
