@@ -79,7 +79,9 @@ const Menu1 = ({
                             <Link
                               href={childMenu.path}
                               className={cn(
-                                "hover:text-theme flex items-center font-medium text-[16px] leading-none text-white px-[25px] py-[10px] capitalize",
+                                "flex items-center font-medium text-[16px] leading-none text-white px-[25px] py-[10px] capitalize ",
+                                j === 0 ? "ml-0" : "-ml-1", // Apply left margin conditionally
+                                "hover:text-theme",
                                 pathname &&
                                   (pathname === childMenu.path + "/" ||
                                     pathname === childMenu.path)
